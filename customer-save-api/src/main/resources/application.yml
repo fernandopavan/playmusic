@@ -1,0 +1,23 @@
+kafka:
+  bootstrap-servers: 127.0.0.1:9092
+  topic.request-topic: customer-request-topic
+  topic.requestreply-topic: customer-reply-topic
+  consumergroup: requestreplycustomergroup1
+
+spring:
+  application:
+    name: customer-producer
+
+  kafka:
+    producer:
+      max:
+        request:
+          size: 231072000
+      batch-size: 60000000
+      buffer-memory: 60000000
+    bootstrap-servers: 127.0.0.1:9092
+    client-id: customer-producer
+    consumer:
+      group-id: requestreplycustomergroup1
+      auto-offset-reset: earliest
+      enable-auto-commit: false
