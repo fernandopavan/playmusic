@@ -9,7 +9,7 @@
 `request-topic-music`
 `reply-topic-music`
 `topic-music-status`
-`request-topic-music-upload`
+`request-topic-music-upload` (10MB)
 `reply-topic-music-listener`
 `request-topic-music-listener`
 <br/>
